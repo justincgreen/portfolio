@@ -60,24 +60,6 @@ $(document).ready(function(){
 		}
 	});
 	
-	// $(window).scroll(function(){
-	// 	if($(window).scrollTop() > breakpointOne) {
-	// 		sectionProjectsRow.addClass('active');
-	// 	}
-	// 	
-	// 	if($(window).scrollTop() >= breakpointTwo) {
-	// 		$('.scrollTo-about').addClass('active');
-	// 		$('.scrollTo-projects').removeClass('active');
-	// 	}else {
-	// 		$('.scrollTo-about').removeClass('active');
-	// 	}
-	// 	
-	// 	if($(window).scrollTop() >= breakpointThree) {
-	// 		$('.scrollTo-about').removeClass('active');
-	// 		$('.scrollTo-projects').addClass('active');
-	// 	}
-	// });
-	
 	// Fix for css hover (touch events) on mobile devices
 	const mobileHover = () => {
 		$('*').on('touchstart', function () {
