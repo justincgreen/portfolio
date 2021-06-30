@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/dashboard.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<title>Dashboard</title>
+</head>
+<body>	
+	<div class="sidebar-menu">				
+		<ul class="sidebar-menu-list">
+			<li class="toolbar-link toolbar-link-1 active" title="Portfolio">
+				<span class="material-icons">trending_up</span>
+				<span class="toolbar-link-label">Portfolio</span>
+			</li>
+			<li class="toolbar-link toolbar-link-2" title="Account">
+				<span class="material-icons">account_balance_wallet</span>
+				<span class="toolbar-link-label">Account</span>
+			</li>
+			<li class="toolbar-link toolbar-link-3" title="Send">
+				<span class="material-icons">local_atm</span>
+				<span class="toolbar-link-label">Send</span>
+			</li>
+			<li class="toolbar-link toolbar-link-4" title="Receive">
+				<span class="material-icons">paid</span>
+				<span class="toolbar-link-label">Receive</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="main-content">
+		<button class="btn-expand-toolbar">></button>
+		
+		<div class="toolbar-top">
+			<ul class="top-menu">
+				<li class="notifications-link" title="Notifications"><span class="material-icons">notifications</span></li>
+				<li class="help-link" title="Help"><span class="material-icons">help_outline</span></li>
+				<li class="settings-link" title="Settings"><span class="material-icons">settings</span></li>
+			</ul>
+		</div>	
+		
+		<div class="content-wrapper">
+			<div class="content">
+				<div class="portfolio-content">
+					<div class="wrapper">
+						<div class="balance-panel">
+							<h3 class="balance-amount">&nbsp;</h3>
+							<span class="balance">Total Balance</span>	
+							<div class="chart-wrapper">
+								<canvas class="my-chart"></canvas>
+							</div>
+						</div>																		
+						
+						<div class="accounts-panel">
+							<h6>Asset allocation</h6>
+							<table>
+								<tr>
+									<th>Asset</th>
+									<th>Price</th>
+									<th>Allocation</th>
+									<th>Amount</th>
+									<th>Value</th>
+								</tr>
+								
+								<tr>
+									<td>Bitcoin</td>
+									<td>$100,000</td>
+									<td>50%</td>
+									<td>1</td>
+									<td>$100,000</td>
+								</tr>
+								
+								<tr>
+									<td>Ethereum</td>
+									<td>$5,000</td>
+									<td>25%</td>
+									<td>1</td>
+									<td>$5,000</td>
+								</tr>
+								
+								<tr>
+									<td>BNB</td>
+									<td>$500</td>
+									<td>25%</td>
+									<td>1</td>
+									<td>$500</td>
+								</tr>
+							</table>
+						</div>
+					</div>					
+				</div>
+				
+				<div class="account-content">	
+					<h4>Accounts</h4>
+					
+					<div class="panel">
+						<table>
+							<tr>
+								<th><span class="label">Bitcoin</span><br>BTC</th>
+								<th>1 BTC</th>								
+								<th>$100,000</th>
+								<th><span class="green">+ 100%</span></th>
+							</tr>
+						</table>							
+					</div>
+					
+					<div class="panel">
+						<table>
+							<tr>
+								<th><span class="label">Ethereum</span><br>ETH</th>
+								<th>1 ETH</th>								
+								<th>$5,000</th>
+								<th><span class="green">+ 200%</span></th>
+							</tr>
+						</table>							
+					</div>
+					
+					<div class="panel">
+						<table>
+							<tr>
+								<th><span class="label">Binance Coin</span><br>BNB</th>
+								<th>1 BNB</th>								
+								<th>$500</th>
+								<th><span class="green">+ 300%</span></th>
+							</tr>
+						</table>							
+					</div>												
+				</div>
+				
+				<div class="send-content">
+					<div class="panel">
+						<h4>Send</h4>
+						<form action="#">
+							<div class="form-spacer">
+								<label for="account">Account to debit</label>
+								<br>
+								<select>
+									<option>BTC</option>
+									<option>ETH</option>
+									<option>BNB</option>
+								</select>
+							</div>
+							
+							<div class="form-spacer">
+								<label>Amount</label>
+								<input type="number" placeholder="Enter Amount">
+							</div>
+							
+							<div class="form-spacer">
+								<label>Recipient Address</label>
+								<br>
+								<input type="text" placeholder="Enter Address">
+							</div>
+							
+							<div class="form-spacer">
+								<button class="btn btn-primary">Send</button>
+							</div>
+						</form>
+					</div>					
+				</div>
+				
+				<div class="receive-content">
+					<div class="panel">
+						<h4>Receive</h4>
+						<form action="#" class="receive-form">
+							<div class="form-spacer">
+								<label>Account to credit</label>
+								<br>
+								<select class="select-currency">
+									<option value="btc">BTC</option>
+									<option value="eth">ETH</option>
+									<option value="bnb">BNB</option>
+								</select>
+							</div>
+							
+							<div class="address">		
+								<span class="btc-address active">
+									<label>BTC Address</label>
+									<br>
+									<input type="text" value="32472398adhflasf" class="currency-address currency-address-1">
+								</span>		
+								
+								<span class="eth-address">
+									<label>ETH Address</label>
+									<br>
+									<input type="text" value="987adsf908723432" class="currency-address currency-address-2">
+								</span>
+								
+								<span class="bnb-address">
+									<label>BNB Address</label>
+									<br>
+									<input type="text" value="43q5asdffaasdf34" class="currency-address currency-address-3">
+								</span>
+								
+								<button class="copy-to-clipboard btn btn-success">Copy Address</button>
+							</div>														
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<div class="modal-content">
+		<div class="notification-panel modal-panel">
+			<h6><span class="material-icons notification-icon">notifications_active</span> Notifications</h6>
+			<p>1 Update Available - <span>Download Now</span></p>
+			<button class="btn-close-modal">
+				<span class="material-icons">cancel</span>
+			</button>
+		</div>
+		
+		<div class="help-panel modal-panel">
+			<h6><span class="material-icons help-icon">help_outline</span> Help</h6>
+			<ul>
+				<li>Getting started <span class="material-icons">chevron_right</span></li>
+				<li>App Support <span class="material-icons">chevron_right</span></li>
+				<li>Github <span class="material-icons">chevron_right</span></li>
+			</ul>
+			<button class="btn-close-modal">
+				<span class="material-icons">cancel</span>
+			</button>
+		</div>
+		
+		<div class="settings-panel modal-panel">
+			<h6><span class="material-icons settings-icon">settings</span> Settings</h6>
+			<ul>
+				<li>Change Password <span class="material-icons">chevron_right</span></li>
+				<li>Version <span class="material-icons">chevron_right</span></li>
+				<li>Terms of Use <span class="material-icons">chevron_right</span></li>
+				<li>Privacy Policy <span class="material-icons">chevron_right</span></li>
+			</ul>
+			<button class="btn-close-modal">
+				<span class="material-icons">cancel</span>
+			</button>
+		</div>					
+	</div>
+	
+	<script src="js/dashboard.js"></script>
+	<script src="js/chart-config.js"></script>
+	<script src="js/modal.js"></script>
+</body>
+</html>

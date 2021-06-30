@@ -1,0 +1,144 @@
+.modal-content {
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	transition: all 0.2s ease-in-out;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	
+	&.active {
+		display: block;
+	}
+}
+
+.modal-panel {
+	background-color: $primary-color; 
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.notification-panel {
+	width: 600px;		
+	padding: 30px;
+	position: relative;
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+	
+	.notification-icon {
+		float: left;
+		margin-right: 5px;
+	}
+	
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		
+		span {
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+			
+			&:hover {
+				color: $light-blue;		
+			}
+		}
+	}
+}
+
+.help-panel {
+	width: 600px;		
+	padding: 30px;
+	position: relative;
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+	
+	.help-icon {
+		float: left;
+		margin-right: 5px;
+	}
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		
+		li {
+			list-style: none;
+			font-size: 16px;
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #868c92;			
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+			
+			&:hover {
+				color: $light-blue;
+			}
+			
+			.material-icons {
+				float: right;
+			}
+		}
+	}
+}
+
+.settings-panel {
+	width: 600px;		
+	padding: 30px;
+	position: relative;
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+	
+	.settings-icon {
+		float: left;
+		margin-right: 5px;
+	}
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		
+		li {
+			list-style: none;
+			font-size: 16px;
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #868c92;			
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+			
+			&:hover {
+				color: $light-blue;
+			}
+			
+			.material-icons {
+				float: right;
+			}
+		}
+	}
+}
+
+.btn-close-modal {
+	background-color: transparent;
+	border: 0;
+	position: absolute;	
+	top: 15px;
+	right: 10px;
+	
+	.material-icons {
+		color: #fff;			
+	}
+}
