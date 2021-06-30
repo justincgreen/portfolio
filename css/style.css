@@ -199,6 +199,7 @@ body {
 	height: 300px;
 	background-size: cover;
 	position: relative;
+	cursor: pointer;
 }
 
 .project-card-1 {
@@ -243,7 +244,6 @@ body {
 	top: 0;
 	opacity: 0;
 	transition: all .1s ease-in-out;
-	cursor: pointer;
 }
 
 .project-card:hover > .project-card-info {
