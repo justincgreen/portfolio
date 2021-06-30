@@ -37,28 +37,28 @@ $(document).ready(function(){
 	let scrollTimeout;
 	const throttle = 50;
 	
-	$(window).on('scroll', function () {
-		if (!scrollTimeout) {
-			scrollTimeout = setTimeout(function () {
-				if($(window).scrollTop() > breakpointOne) {
-					sectionProjectsRow.addClass('active');
-				}
-				
-				if($(window).scrollTop() >= breakpointTwo) {
-					$('.scrollTo-about').addClass('active');
-					$('.scrollTo-projects').removeClass('active');
-				}else {
-					$('.scrollTo-about').removeClass('active');
-				}
-				
-				if($(window).scrollTop() >= breakpointThree) {
-					$('.scrollTo-about').removeClass('active');
-					$('.scrollTo-projects').addClass('active');
-				}
-				scrollTimeout = null;
-			}, throttle);
-		}
-	});
+	// $(window).on('scroll', function () {
+	// 	if (!scrollTimeout) {
+	// 		scrollTimeout = setTimeout(function () {
+	// 			if($(window).scrollTop() > breakpointOne) {
+	// 				sectionProjectsRow.addClass('active');
+	// 			}
+	// 			
+	// 			if($(window).scrollTop() >= breakpointTwo) {
+	// 				$('.scrollTo-about').addClass('active');
+	// 				$('.scrollTo-projects').removeClass('active');
+	// 			}else {
+	// 				$('.scrollTo-about').removeClass('active');
+	// 			}
+	// 			
+	// 			if($(window).scrollTop() >= breakpointThree) {
+	// 				$('.scrollTo-about').removeClass('active');
+	// 				$('.scrollTo-projects').addClass('active');
+	// 			}
+	// 			scrollTimeout = null;
+	// 		}, throttle);
+	// 	}
+	// });
 	
 	// Fix for css hover (touch events) on mobile devices
 	const mobileHover = () => {
