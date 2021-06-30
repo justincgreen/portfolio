@@ -11,6 +11,10 @@ body {
 	font-family: 'Fira Code', monospace;
 }
 
+.page {
+	position: relative;
+}
+
 /* Page Header */
 .page-header {
 	display: block;
