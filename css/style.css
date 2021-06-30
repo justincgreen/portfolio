@@ -14,7 +14,7 @@ body {
 /* Page Header */
 .page-header {
 	position: fixed;
-	top: -;
+	top: -1px;
 	left: 0;
 	right: 0;
 	z-index: 2;
