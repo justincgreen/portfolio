@@ -33,25 +33,50 @@ $(document).ready(function(){
 	const breakpointOne = $('.section-about').offset().top - 250;
 	const breakpointTwo = $('.section-about').offset().top - 63;
 	const breakpointThree = $('.section-projects').offset().top - 63;
-	const sectionProjectsRow = $('.section-projects-row');	
+	const sectionProjectsRow = $('.section-projects-row');		
+	let scrollTimeout;
+	const throttle = 50;
 	
-	$(window).scroll(function(){
-		if($(window).scrollTop() > breakpointOne) {
-			sectionProjectsRow.addClass('active');
-		}
-		
-		if($(window).scrollTop() >= breakpointTwo) {
-			$('.scrollTo-about').addClass('active');
-			$('.scrollTo-projects').removeClass('active');
-		}else {
-			$('.scrollTo-about').removeClass('active');
-		}
-		
-		if($(window).scrollTop() >= breakpointThree) {
-			$('.scrollTo-about').removeClass('active');
-			$('.scrollTo-projects').addClass('active');
+	$(window).on('scroll', function () {
+		if (!scrollTimeout) {
+			scrollTimeout = setTimeout(function () {
+				if($(window).scrollTop() > breakpointOne) {
+					sectionProjectsRow.addClass('active');
+				}
+				
+				if($(window).scrollTop() >= breakpointTwo) {
+					$('.scrollTo-about').addClass('active');
+					$('.scrollTo-projects').removeClass('active');
+				}else {
+					$('.scrollTo-about').removeClass('active');
+				}
+				
+				if($(window).scrollTop() >= breakpointThree) {
+					$('.scrollTo-about').removeClass('active');
+					$('.scrollTo-projects').addClass('active');
+				}
+				scrollTimeout = null;
+			}, throttle);
 		}
 	});
+	
+	// $(window).scroll(function(){
+	// 	if($(window).scrollTop() > breakpointOne) {
+	// 		sectionProjectsRow.addClass('active');
+	// 	}
+	// 	
+	// 	if($(window).scrollTop() >= breakpointTwo) {
+	// 		$('.scrollTo-about').addClass('active');
+	// 		$('.scrollTo-projects').removeClass('active');
+	// 	}else {
+	// 		$('.scrollTo-about').removeClass('active');
+	// 	}
+	// 	
+	// 	if($(window).scrollTop() >= breakpointThree) {
+	// 		$('.scrollTo-about').removeClass('active');
+	// 		$('.scrollTo-projects').addClass('active');
+	// 	}
+	// });
 	
 	// Fix for css hover (touch events) on mobile devices
 	const mobileHover = () => {
