@@ -20,7 +20,6 @@ body {
 	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
-	transform: translateZ(0); 
 }
 
 .page-progress {
