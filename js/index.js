@@ -52,4 +52,15 @@ $(document).ready(function(){
 			$('.scrollTo-projects').addClass('active');
 		}
 	});
+	
+	// Fix css hover (touch events) on mobile devices
+	const mobileHover = () => {
+		$('*').on('touchstart', function () {
+			$(this).trigger('hover');
+		}).on('touchend', function () {
+			$(this).trigger('hover');
+		});
+	};
+	
+	mobileHover();
 });
