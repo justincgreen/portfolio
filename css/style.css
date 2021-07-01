@@ -24,7 +24,8 @@ body {
 	right: 0;
 	z-index: 1000;
 	padding: 10px 0;
-	background-color: #1b242f;
+	/* background-color: #1b242f; */
+	background: rgb(27,36,47)
 }
 
 .page-progress {
