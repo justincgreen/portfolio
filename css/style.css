@@ -27,6 +27,12 @@ body {
 	background-color: #1b242f;
 }
 
+@media (max-width: 768px) {
+	.page-header {
+		position: relative;
+	}
+}
+
 .page-progress {
 	height: 3px;
 	background-color: #fff;
