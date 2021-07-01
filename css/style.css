@@ -16,6 +16,16 @@ body {
 	height: 100%;
 }
 
+.helper {
+	height: 5px;
+	background-color: orangered;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
 /* Page Header */
 .page-header {
 	position: fixed;
@@ -25,7 +35,6 @@ body {
 	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
-	margin-top: -1px;
 }
 
 .page-progress {
