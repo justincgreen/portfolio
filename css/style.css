@@ -17,7 +17,7 @@ body {
 
 .sticky {
 	height: 50px;
-	background: orange;
+	background: black;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -38,8 +38,7 @@ body {
 	right: 0;
 	z-index: 2;
 	padding: 10px 0;
-	/* background-color: #1b242f; */
-	background-color: orangered;
+	background-color: #1b242f;
 }
 
 .page-progress {
