@@ -35,7 +35,7 @@ $(document).ready(function(){
 	const breakpointThree = $('.section-projects').offset().top - 63;
 	const sectionProjectsRow = $('.section-projects-row');		
 	let scrollTimeout;
-	const throttle = 100;
+	const throttle = 10;
 	
 	$(window).on('scroll', function () {
 		if (!scrollTimeout) {
