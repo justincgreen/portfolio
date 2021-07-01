@@ -22,10 +22,10 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1000;
+	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
-	backface-visibility: hidden;
+	outline: 1px solid transparent;
 }
 
 .page-progress {
