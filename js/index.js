@@ -35,11 +35,19 @@ $(document).ready(function(){
 	const breakpointThree = $('.section-projects').offset().top - 63;
 	const sectionProjectsRow = $('.section-projects-row');		
 	let scrollTimeout;
-	const throttle = 100;
+	const throttle = 50;
+	
+	let progress = $('.page-progress-bar');
+	
 	
 	$(window).on('scroll', function () {
 		if (!scrollTimeout) {
 			scrollTimeout = setTimeout(function () {
+				let pageScroll = $(window).scrollTop;
+				let height = $(window).height() - $(document).height();
+				let scrolled = (pageScroll / height) * 100;
+				progress.style.width = scrolled + '%';
+				
 				if($(window).scrollTop() > breakpointOne) {
 					sectionProjectsRow.addClass('active');
 				}
