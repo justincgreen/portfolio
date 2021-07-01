@@ -56,8 +56,11 @@ $(document).ready(function(){
 					$('.scrollTo-projects').addClass('active');
 				}
 				scrollTimeout = null;
+				console.log('howdy');
 			}, throttle);
 		}
+		
+		console.log('doo');
 	});
 	
 	// Fix for css hover (touch events) on mobile devices
