@@ -76,7 +76,7 @@ body {
 
 /* Page Hero */
 .page-hero {
-	height: 1000px;
+	height: 100%;
 	background-color: #1b242f;
 	position: relative;
 	color: #fff;
