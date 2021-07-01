@@ -11,6 +11,19 @@ body {
 	font-family: 'Fira Code', monospace;
 }
 
+.foo {
+	background: purple;
+}
+
+.sticky {
+	height: 50px;
+	background: orange;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
 .page {
 	position: relative;
 	height: 100%;
