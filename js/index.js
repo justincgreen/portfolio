@@ -37,17 +37,9 @@ $(document).ready(function(){
 	let scrollTimeout;
 	const throttle = 50;
 	
-	let progress = $('.page-progress-bar');
-	
-	
 	$(window).on('scroll', function () {
 		if (!scrollTimeout) {
 			scrollTimeout = setTimeout(function () {
-				let pageScroll = $(window).scrollTop;
-				let height = $(window).height() - $(document).height();
-				let scrolled = (pageScroll / height) * 100;
-				progress.style.width = scrolled + '%';
-				
 				if($(window).scrollTop() > breakpointOne) {
 					sectionProjectsRow.addClass('active');
 				}
