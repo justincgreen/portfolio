@@ -25,7 +25,7 @@ body {
 	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
-	outline: 1px solid transparent;
+	margin-top: -1px;
 }
 
 .page-progress {

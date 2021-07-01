@@ -35,7 +35,7 @@ $(document).ready(function(){
 	const breakpointThree = $('.section-projects').offset().top - 63;
 	const sectionProjectsRow = $('.section-projects-row');		
 	let scrollTimeout;
-	const throttle = 10;
+	const throttle = 50;
 	
 	$(window).on('scroll', function () {
 		if (!scrollTimeout) {
@@ -56,11 +56,8 @@ $(document).ready(function(){
 					$('.scrollTo-projects').addClass('active');
 				}
 				scrollTimeout = null;
-				console.log('howdy');
 			}, throttle);
-		}
-		
-		console.log('doo');
+		}		
 	});
 	
 	// Fix for css hover (touch events) on mobile devices
