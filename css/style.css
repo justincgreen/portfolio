@@ -27,11 +27,11 @@ body {
 	background-color: #1b242f;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.page-header {
 		position: relative;
 	}
-}
+} */
 
 .page-progress {
 	height: 3px;
@@ -202,12 +202,12 @@ body {
 	transition: all .5s ease-in-out;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.section-projects-row {
 		opacity: 1;
 		top: 0;
 	}
-}
+} */
 
 .section-projects-row.active {
 	opacity: 1;
