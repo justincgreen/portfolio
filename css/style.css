@@ -50,6 +50,12 @@ body {
 	z-index: 1;
 }
 
+@media (max-width: 768px) {
+	.page-progress {
+		display: 
+	}
+}
+
 .page-progress-bar {
 	width: 0;
 	height: 3px;
