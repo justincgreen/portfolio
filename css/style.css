@@ -202,13 +202,15 @@ body {
 	transition: all .5s ease-in-out;
 }
 
-/* @media (max-width: 768px) {
+/* Display by default on mobile */
+@media (max-width: 768px) {
 	.section-projects-row {
 		opacity: 1;
 		top: 0;
 	}
-} */
+}
 
+/* This active class logic only applies to desktop, not mobile */
 .section-projects-row.active {
 	opacity: 1;
 	top: 0;
