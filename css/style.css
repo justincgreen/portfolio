@@ -11,13 +11,6 @@ body {
 	font-family: 'Fira Code', monospace;
 }
 
-/* @media (max-width: 768px) {
-	html,
-	body {
-		overflow-x: hidden;
-	}
-} */
-
 .page {
 	position: relative;
 	height: 100%;
@@ -34,9 +27,12 @@ body {
 	background-color: #1b242f;
 }
 
+/* Fixed elements are buggy on mobile browsers */
+/* Makes page-header friendly on mobile browsers */
 @media (max-width: 768px) {
 	.page-header {
 		position: absolute;
+		border-bottom: 3px solid #fff;
 	}
 }
 
@@ -50,6 +46,7 @@ body {
 	z-index: 1;
 }
 
+/* Hide page progress on mobile */
 @media (max-width: 768px) {
 	.page-progress {
 		display: none;
