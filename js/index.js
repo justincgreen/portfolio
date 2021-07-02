@@ -19,7 +19,7 @@ $(document).ready(function(){
 	const btnScrollDown = $('.btn-scroll-down');
 	
 	const scrollToTarget = () => {
-		if($((window).width() <= 768) {
+		if($(window).width() <= 768) {
 			let navbarOffset = 0;
 		}else {
 			let navbarOffset = 53;	
