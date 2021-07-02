@@ -5,17 +5,26 @@ $(document).ready(function(){
 	scrollToSection.on('click', (event) => {
 		event.preventDefault();
 		
-		let navElement = event.target.getAttribute('href');
-		let navbarHeight = 53; // Offset nav bar
-		let navOffset = $(navElement).offset().top;		
-		
-		$('html, body').animate({scrollTop: navOffset - navbarHeight}, 500);	
+		if($(window).width() > 768) {
+			// Desktop
+			let navElement = event.target.getAttribute('href');
+			let navbarHeight = 53; // Offset nav bar
+			let navOffset = $(navElement).offset().top;		
+			
+			$('html, body').animate({scrollTop: navOffset - navbarHeight}, 500);
+		}else {
+			// Mobile
+			let navElement = event.target.getAttribute('href');
+			let navOffset = $(navElement).offset().top;		
+			
+			$('html, body').animate({scrollTop: navOffset}, 500);
+		}
 		
 		return false; // Remove hashes in URL
 	});
 	
 	
-	// Scroll down to about section
+	// Scroll down to about section on btn click
 	const btnScrollDown = $('.btn-scroll-down');
 	
 	const scrollToTarget = () => {
