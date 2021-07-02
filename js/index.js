@@ -62,7 +62,7 @@ $(document).ready(function(){
 	
 	// Fix for css hover (touch events) on mobile devices
 	const mobileHover = () => {
-		$('*').on('touchstart', function () {
+		$('.project-card').on('touchstart', function () {
 			$(this).trigger('hover');
 		}).on('touchend', function () {
 			$(this).trigger('hover');
