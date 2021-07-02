@@ -25,8 +25,16 @@ body {
 	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
-	perspective: 1000;
-	-webkit-perspective: 1000;
+	animation: repaint 1ms;
+}
+
+@keyframes repaint {
+  from {
+	width: 99.999%
+  }
+  to {
+	width: 100%
+  }
 }
 
 /* @media (max-width: 768px) {
