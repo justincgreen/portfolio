@@ -25,6 +25,8 @@ body {
 	z-index: 2;
 	padding: 10px 0;
 	background-color: #1b242f;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
 
 /* @media (max-width: 768px) {
