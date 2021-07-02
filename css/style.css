@@ -29,8 +29,7 @@ body {
 
 @media (max-width: 768px) {
 	.page-header {
-		top: 1px;
-		border-top: 1px solid #1b242f;
+		position: relative;
 	}
 }
 
