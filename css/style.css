@@ -76,6 +76,12 @@ body {
 	transition: color .2s ease-in-out;
 }
 
+@media (max-width: 768px) {
+	.page-nav a:hover {
+		color: #fff;
+	}	
+}
+
 .page-nav a.active {
 	color: #29AB87;
 }
