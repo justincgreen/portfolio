@@ -11,6 +11,12 @@ body {
 	font-family: 'Fira Code', monospace;
 }
 
+@media (max-width: 768px) {
+	.body {
+		overflow-x: hidden;
+	}
+}
+
 .page {
 	position: relative;
 	height: 100%;
