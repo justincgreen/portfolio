@@ -202,6 +202,13 @@ body {
 	transition: all .5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+	.section-projects-row {
+		opacity: 1;
+		top: 0;
+	}
+}
+
 .section-projects-row.active {
 	opacity: 1;
 	top: 0;
