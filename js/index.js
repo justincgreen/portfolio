@@ -23,9 +23,7 @@ $(document).ready(function(){
 			// Mobile
 			let element = $('.section-about');		
 			let elementPosition = element.offset().top;
-			let navbarOffset =0;	
-			let offsetPosition = elementPosition - navbarOffset;
-			$('html, body').animate({scrollTop: offsetPosition}, 500)
+			$('html, body').animate({scrollTop: elementPosition}, 500)
 			
 		}else {
 			// Desktop
