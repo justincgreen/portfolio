@@ -20,16 +20,21 @@ $(document).ready(function(){
 	
 	const scrollToTarget = () => {
 		if($(window).width() <= 768) {
-			let navbarOffset = 0;
+			// Mobile
+			let element = $('.section-about');		
+			let elementPosition = element.offset().top;
+			let navbarOffset =0;	
+			let offsetPosition = elementPosition - navbarOffset;
+			$('html, body').animate({scrollTop: offsetPosition}, 500)
+			
 		}else {
+			// Desktop
+			let element = $('.section-about');		
+			let elementPosition = element.offset().top;
 			let navbarOffset = 53;	
+			let offsetPosition = elementPosition - navbarOffset;		
+			$('html, body').animate({scrollTop: offsetPosition}, 500)	
 		}
-		
-		let element = $('.section-about');		
-		let elementPosition = element.offset().top;
-		let offsetPosition = elementPosition - navbarOffset;
-	
-		$('html, body').animate({scrollTop: offsetPosition}, 500)
 	}
 	
 	btnScrollDown.on('click', scrollToTarget);
