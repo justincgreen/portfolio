@@ -19,8 +19,13 @@ $(document).ready(function(){
 	const btnScrollDown = $('.btn-scroll-down');
 	
 	const scrollToTarget = () => {
-		let element = $('.section-about');
-		let navbarOffset = 53;
+		if($((window).width() <= 768) {
+			let navbarOffset = 0;
+		}else {
+			let navbarOffset = 53;	
+		}
+		
+		let element = $('.section-about');		
 		let elementPosition = element.offset().top;
 		let offsetPosition = elementPosition - navbarOffset;
 	
