@@ -11,12 +11,12 @@ body {
 	font-family: 'Fira Code', monospace;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	html,
 	body {
 		overflow-x: hidden;
 	}
-}
+} */
 
 .page {
 	position: relative;
@@ -37,6 +37,7 @@ body {
 @media (max-width: 768px) {
 	.page-header {
 		position: absolute;
+		display: none;
 	}
 }
 
