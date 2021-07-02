@@ -18,10 +18,10 @@ body {
 	}
 } */
 
-.page {
+/* .page {
 	position: relative;
 	height: 100%;
-}
+} */
 
 /* Page Header */
 .page-header {
@@ -37,7 +37,6 @@ body {
 @media (max-width: 768px) {
 	.page-header {
 		position: absolute;
-		display: none;
 	}
 }
 
