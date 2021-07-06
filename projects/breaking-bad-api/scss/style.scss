@@ -12,6 +12,15 @@ body {
 	}
 }
 
+// Spinner - displayed while data is loading
+.spinner {
+	text-align: center;
+	
+	img {
+		width: 50px;
+	}
+}
+
 // Character
 .character {
 	margin-bottom: 20px;

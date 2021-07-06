@@ -7,7 +7,10 @@ const dataUrl = dataApi.url + dataApi.character;
 
 fetch(dataUrl)
 	.then(response => response.json())
-	.then(data => {						
+	.then(data => {				
+		// Hide loading spinner 
+		document.querySelector('.spinner').style.display = 'none';
+				
 		// Display each character	
 		let charList = document.querySelector('.character-list');	
 			
@@ -79,6 +82,10 @@ fetch(dataUrl)
 	.catch(error => {
 		let charList = document.querySelector('.character-list');
 		let errorElement = document.createElement('h4');
+		
+		// Hide loading spinner & search bar
+		document.querySelector('.spinner').style.display = 'none';
+		document.querySelector('.search-wrapper').style.display = 'none';
 		
 		charList.insertAdjacentElement('afterend', errorElement);
 		errorElement.style.textAlign = 'center';

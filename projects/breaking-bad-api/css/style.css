@@ -11,6 +11,13 @@ body {
   width: 200px;
 }
 
+.spinner {
+  text-align: center;
+}
+.spinner img {
+  width: 50px;
+}
+
 .character {
   margin-bottom: 20px;
 }
