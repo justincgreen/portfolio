@@ -270,6 +270,10 @@ body {
 	background-image: url(../images/dashboard-thumb@sm.jpg);
 }
 
+.project-card-9 {	
+	background-image: url(../images/pizza-thumb@sm.jpg);
+}
+
 .project-card-info {
 	background-color: rgba(41,171,135,.9);
 	width: 100%;
@@ -322,6 +326,10 @@ body {
 .project-card-2 .project-card-info h4:after,
 .project-card-5 .project-card-info h4:after  {
 	content: 'Responsive / Wordpress';
+}
+
+.project-card-9 .project-card-info h4:after {
+	content: 'React';
 }
 
 .btn-view-link {
