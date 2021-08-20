@@ -267,11 +267,11 @@ body {
 }
 
 .project-card-8 {	
-	background-image: url(../images/dashboard-thumb@sm.jpg);
+	background-image: url(../images/coin-pouch-thumb@sm.jpg);
 }
 
 .project-card-9 {	
-	background-image: url(../images/pizza-thumb@sm.jpg);
+	background-image: url(../images/okc-pizza-thumb@sm.jpg);
 }
 
 .project-card-info {
@@ -328,6 +328,7 @@ body {
 	content: 'Responsive / Wordpress';
 }
 
+.project-card-8 .project-card-info h4:after,
 .project-card-9 .project-card-info h4:after {
 	content: 'React';
 }
