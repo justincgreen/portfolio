@@ -265,7 +265,7 @@ body {
 }
 
 .project-card-7 {
-	background-image: url(../images/breaking-bad-thumb@sm.jpg);
+	background-image: url(../images/budget-tracker@sm.jpg);
 }
 
 .project-card-8 {	
@@ -330,6 +330,7 @@ body {
 	content: 'Responsive / Wordpress';
 }
 
+.project-card-7 .project-card-info h4:after,
 .project-card-8 .project-card-info h4:after,
 .project-card-9 .project-card-info h4:after {
 	content: 'React';
