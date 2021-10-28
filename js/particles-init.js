@@ -1,6 +1,14 @@
 Particles.init({
 	selector: '.particle-bg',
 	color: ['#fff', '#29AB87'],
-	maxParticles: 250,
-	speed: 1
+	maxParticles: 200,
+	speed: 1,
+	responsive: [
+		{
+			breakpoint: 768,
+			options: {
+				maxParticles: 100
+			}
+		}
+	]
 });	
