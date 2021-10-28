@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	// Animate page hero text on page load
+	$('.hero-text').addClass('active');
+	
 	// Navbar links scroll to section
 	const scrollToSection = $('.scrollTo');
 	
