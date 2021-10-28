@@ -9,6 +9,24 @@ Particles.init({
 			options: {
 				maxParticles: 100
 			}
+		},
+		{
+			breakpoint: 425,
+			options: {
+				maxParticles: 100
+			}
+		},
+		{
+			breakpoint: 375,
+			options: {
+				maxParticles: 100
+			}
+		},
+		{
+			breakpoint: 320,
+			options: {
+				maxParticles: 100
+			}
 		}
 	]
 });	
