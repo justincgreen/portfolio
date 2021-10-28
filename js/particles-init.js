@@ -7,7 +7,7 @@ Particles.init({
 		{
 			breakpoint: 768,
 			options: {
-				maxParticles: 100
+				maxParticles: 0
 			}
 		},
 		{
