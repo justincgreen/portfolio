@@ -24,7 +24,8 @@ body {
 	right: 0;
 	z-index: 2;
 	padding: 10px 0;
-	background-color: #1b242f;
+	background-color: rgba(27, 36, 47, 0.8);
+	backdrop-filter: blur(6px);
 }
 
 /* Fixed elements are buggy on mobile browsers */
