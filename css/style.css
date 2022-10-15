@@ -281,11 +281,11 @@ body {
 }
 
 .project-card-2 {
-	background-image: url(../images/acc-thumb@sm.jpg);
+	background-image: url(../images/gpo@2x.jpg);
 }
 
 .project-card-3 {
-	background-image: url(../images/impact-thumb@sm.jpg);
+	background-image: url(../images/acc-thumb@sm.jpg);
 }
 
 .project-card-4 {
@@ -293,7 +293,7 @@ body {
 }
 
 .project-card-5 {
-	background-image: url(../images/elitch-thumb@sm.jpg);
+	background-image: url(../images/impact-thumb@sm.jpg);
 }
 
 .project-card-6 {
@@ -358,7 +358,7 @@ body {
 	font-size: 16px;
 }
 
-.project-card-2 .project-card-info h4:after,
+.project-card-3 .project-card-info h4:after,
 .project-card-4 .project-card-info h4:after,
 .project-card-5 .project-card-info h4:after,
 .project-card-7 .project-card-info h4:after {
@@ -366,8 +366,9 @@ body {
 }
 
 .project-card-1 .project-card-info h4:after,
-.project-card-3 .project-card-info h4:after,
-.project-card-6 .project-card-info h4:after  {
+.project-card-2 .project-card-info h4:after,
+.project-card-5 .project-card-info h4:after,
+.project-card-6 .project-card-info h4:after {
 	content: 'Responsive / Wordpress';
 }
 
