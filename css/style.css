@@ -1,10 +1,78 @@
-/* Global style */
+/* Global styles */
 :root {
 	--green-color: #29AB87;
 	--purple-color: #38028d;
 	--grey-color: #f5f5f5;
 }
 
+/* Animation classes */
+@keyframes fade-up {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@media(min-width: 767px) {
+	.u-animation-delay .is-active:nth-child(1n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: .2s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(2n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: .4s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(3n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: .6s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(4n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: .8s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(5n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: 1s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(6n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: 1.2s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(7n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: 1.4s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(8n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: 1.6s;
+	}
+	
+	.u-animation-delay .is-active:nth-child(9n) {
+		animation: fade-up 500ms ease forwards;
+		animation-delay: 1.8s;
+	}	
+}
+
+.u-fade-up {
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+@media(max-width: 767px) {
+	.u-fade-up {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* Badges */
 .badge {
 	padding: 10px 15px;
 }
@@ -18,6 +86,7 @@
 	background-color: var(--grey-color);
 }
 
+/* Page */
 html {
 	height: 100%;
 	width: 100%;
@@ -248,9 +317,9 @@ body {
 }
 
 .section-projects-row {
-	opacity: 0;	
+	/* opacity: 0;	 */
 	position: relative;
-	top: 100px;
+	/* top: 100px; */
 	transition: all .5s ease-in-out;
 }
 
@@ -263,14 +332,14 @@ body {
 }
 
 /* This active class logic only applies to desktop, not mobile */
-.section-projects-row.active {
+/* .section-projects-row.active {
 	opacity: 1;
 	top: 0;
-}
+} */
 
 .project-card {
 	height: 259px;
-	background-size: contain;
+	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
 	position: relative;

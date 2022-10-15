@@ -58,12 +58,15 @@ $(document).ready(function(){
 	const throttle = 50;
 	
 	// Target Desktop only
-	if($(window).width() > 768) {
+	if($(window).width() > 767) {
 		$(window).on('scroll', function () {
 			if (!scrollTimeout) {
 				scrollTimeout = setTimeout(function () {
 					if($(window).scrollTop() > breakpointOne) {
-						sectionProjectsRow.addClass('active');
+						// sectionProjectsRow.addClass('active');
+						$('.u-fade-up').each(function() {
+							$(this).addClass('is-active');
+						});
 					}
 					
 					if($(window).scrollTop() >= breakpointTwo) {
