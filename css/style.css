@@ -5,7 +5,7 @@
 	--grey-color: #f5f5f5;
 }
 
-/* Animation classes */
+/* Animations */
 @keyframes fade-up {
 	to {
 		transform: translateY(0);
