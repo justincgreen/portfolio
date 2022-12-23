@@ -354,11 +354,12 @@ body {
 }
 
 .project-card-3 {
-	background-image: url(../images/acc-thumb@sm.jpg);
+	background-image: url(../images/states@2x.jpg);
 }
 
 .project-card-4 {
-	background-image: url(../images/sugar-thumb@sm.jpg);
+	background-image: url(../images/acc-thumb@sm.jpg);
+	/* background-image: url(../images/sugar-thumb@sm.jpg); */
 }
 
 .project-card-5 {
@@ -427,7 +428,10 @@ body {
 	font-size: 16px;
 }
 
-.project-card-3 .project-card-info h4:after,
+.project-card-3 .project-card-info h4:after {
+	content: 'Component Library';	
+}
+
 .project-card-4 .project-card-info h4:after,
 .project-card-5 .project-card-info h4:after,
 .project-card-7 .project-card-info h4:after {
