@@ -261,14 +261,21 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 576px) {
+.headshot-img {
+  width: 250px;
+}
+
+@media (max-width: 767px) {
 	.headshot-img {
-		text-align: center;	
+    width: 200px;
+		text-align: center;
+    margin: 0 auto;
 	}
 }
 
 .headshot {
 	border-radius: 50%;
+  width: 100%;
 }
 
 .about-text {
@@ -358,28 +365,28 @@ body {
 }
 
 .project-card-4 {
+  background-image: url(../images/budget-tracker@sm.jpg);
+}
+
+.project-card-5 {	
+  background-image: url(../images/coin-pouch-thumb@sm.jpg);
+}
+
+.project-card-6 {
 	background-image: url(../images/acc-thumb@sm.jpg);
 	/* background-image: url(../images/sugar-thumb@sm.jpg); */
 }
 
-.project-card-5 {
+.project-card-7 {
 	background-image: url(../images/impact-thumb@sm.jpg);
 }
 
-.project-card-6 {
+.project-card-8 {
 	background-image: url(../images/jm2-thumb@sm.jpg);
 }
 
-.project-card-7 {
+.project-card-9 {
 	background-image: url(../images/rbdms-thumb@sm.jpg);
-}
-
-.project-card-8 {
-	background-image: url(../images/budget-tracker@sm.jpg);
-}
-
-.project-card-9 {	
-	background-image: url(../images/coin-pouch-thumb@sm.jpg);
 }
 
 /* .project-card-9 {	
@@ -428,26 +435,31 @@ body {
 	font-size: 16px;
 }
 
+.project-card-1 .project-card-info h4:after {
+  content: 'React / Wordpress';
+}
+
 .project-card-3 .project-card-info h4:after {
 	content: 'Component Library';	
 }
 
-.project-card-4 .project-card-info h4:after,
-.project-card-5 .project-card-info h4:after,
-.project-card-7 .project-card-info h4:after {
+.project-card-4 .project-card-info h4:after {
+  content: 'Next / React'
+}
+
+.project-card-5 .project-card-info h4:after {
+  content: 'React';
+}
+
+.project-card-6 .project-card-info h4:after,
+.project-card-9 .project-card-info h4:after {
 	content: 'Responsive';
 }
 
-.project-card-1 .project-card-info h4:after,
 .project-card-2 .project-card-info h4:after,
-.project-card-5 .project-card-info h4:after,
-.project-card-6 .project-card-info h4:after {
-	content: 'Responsive / Wordpress';
-}
-
-.project-card-8 .project-card-info h4:after,
-.project-card-9 .project-card-info h4:after {
-	content: 'React';
+.project-card-7 .project-card-info h4:after,
+.project-card-8 .project-card-info h4:after {
+	content:  'Wordpress';
 }
 
 .btn-view-link {
